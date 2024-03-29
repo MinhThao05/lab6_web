@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .container {
+        width: 800px;
+        margin: auto;
+        /* justify-content: center; */
+        display: flex;
+        justify-content: center;
+      }
+      .box1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(202, 205, 205);
+      }
+      .box2 {
+        background-color: rgb(175, 179, 180);
+      }
+      select {
+        width: 200px;
+        height: 30px;
+        margin: 5px;
+        border-bottom: none;
+        border-right: none;
+        border-left: 2px solid black;
+        border-top: 2px solid black;
+      }
+      div p {
+        font-weight: bold;
+
+        margin-bottom: 10px;
+      }
+      tr td {
+        padding-right: 40px;
+        padding-left: 20px;
+      }
+      .box3 {
+        height: 200px;
+        background-color: rgb(193, 213, 207);
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <form>
+        <div class="box1">
+          <label for="current">Current role</label>
+          <select name="" id="">
+            <option value="">All</option>
+          </select>
+        </div>
+        <div class="box2">
+          <table>
+            <tr>
+              <td>
+                <p>
+                  People in the course <br />
+                  show only users of group:
+                </p>
+                <select name="" id="">
+                  <option value="op1">All participants</option>
+                  <option value="op1">Only Class</option>
+                </select>
+              </td>
+              <td>
+                <p>Groups <br />Useonly groups of:</p>
+                <select name="" id="">
+                  <option value="op1">Project A</option>
+                  <option value="op2">Project B</option>
+                </select>
+              </td>
+              <td>
+                <p>Members of selected group</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="box3">
+          <table>
+            <tr>
+              <td>
+                <p>People in the course</p>
+                <select name="" id="">
+                  <option value="op1"># Ángela Profesor (2)</option>
+                  <option value="op2"># Enrique Castro (1)</option>
+                  <option value="op3"># Matín Profesor (2)</option>
+                  <option value="op4">- Pilar profesor</option>
+                  <option value="op5">Rafeal Guerra(3)</option>
+                  <option value="op6">Rosa Sánchez(3)</option>
+                </select>
+              </td>
+              <td>
+                <p>Groups</p>
+                <select name="" id="">
+                  <option value="op1">WritingA01 (2)</option>
+                  <option value="op2">WritingA02 (3)</option>
+                  <option value="op3">WritingA03 (2)</option>
+                  <option value="op4">WritingA04 (2)</option>
+                </select>
+              </td>
+              <td>
+                <p>Members of selected group</p>
+                <select name="" id="">
+                  <option value="op1">Caudia Benítez</option>
+                  <option value="op2">Inés Herrero</option>
+                </select>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

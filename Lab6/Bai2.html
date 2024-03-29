@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   
+    <style>
+      .container {
+  width: 600px;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+tr {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+.ngan {
+  width: 150px;
+}
+.optxd {
+  width: 200px;
+}
+#Surname,
+#middilename,
+#firstname {
+  width: 100px;
+}
+.box22 {
+  margin: auto;
+border: 1px solid rgb(70, 34, 34);
+border-radius: 5px;
+  width: 630px;
+  height: 180px;
+  overflow: auto;
+  text-align: center;
+}
+h1 {
+  color: chocolate;
+}
+.box3 {
+  text-align: center;
+}
+.button {
+  margin-top: 10px;
+  height: 40px;
+  font-size: 15px;
+  background-color: blueviolet;
+  color: white;
+}
+
+label {
+  display: flex;
+  align-items: center;
+}
+label > p {
+  width: 200px;
+  text-align: end;
+  margin: 0 8px;
+  font-weight: bold;
+}
+
+
+    </style>
+    <title>Tạo form đăng ký tài khoản</title>
+  </head>
+  <body>
+    <div class="container">
+      <form action="" id="ftb">
+        <table>
+          <tr>
+            <td>
+              <label for="loginname"
+                > <P>Tên dăng nhập</P>
+                <input
+                  type="text"
+                  name="loginname"
+                  required
+                  id="loginame"
+                  class="ngan lbtext"
+                />
+                
+              </label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="passwork"> 
+                <p>Mật khẩu</p>
+                  <input
+                  type="text"
+                  name="passwork"
+                  required
+                  id="passwork"
+                  class="ngan setsize lbtext"
+                />
+                </p>
+                
+              </label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="confirmpass"
+                >
+                <p>Xác nhận ật khẩu</p>
+                <input
+                  type="text"
+                  required
+                  id="confirmpasswork"
+                  class="ngan setsize lbtext"
+                />
+                
+              </label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="addressmail" id="lb"
+                >
+                <p>Địa chỉ Email</p>
+                <input
+                  type="email"
+                  required
+                  id="addressemail"
+                  class="ngan setsize lbtext"
+                />
+                
+              </label>
+            </td>
+          </tr>
+          <tr >
+            <td id="textrequest" class="lbtext" style="margin-left: 215px; ">
+              <i 
+                >Email này dùng để nhận email kích hoạt tài khoản, lấy lại mật
+                khẩu <br />
+                thông báo từ ban quản trị
+              </i>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="">
+                <p>Xưng danh</p>
+                <select name="Xungdanh" id="xungdanh" class="lbtext">
+                  <option value="friend" class="optxd">Bạn</option>
+                  <option value="grandfather" class="optxd">Ông</option>
+                  <option value="grandmother" class="optxd">Bà</option>
+                </select>
+              </label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="">
+                <p>Họ và tên</p>
+                <input
+                  type="text"
+                  id="Surname"
+                  placeholder="Họ"
+                  required
+                  class="setsize lbtext"
+                />
+                <input
+                  type="text "
+                  id="middilename"
+                  placeholder="Tên đệm"
+                  required
+                  class="setsize lbtext"
+                />
+                <input
+                  type="text"
+                  id="firstname"
+                  placeholder="Tên"
+                  required
+                  class="setsize lbtext"
+                />
+              </label>
+            </td>
+          </tr>
+          <tr>
+            <td class="lbtext">
+              <label for="">
+                <p>Giới tính</p>
+                <input type="radio" name="gender" required />
+                <label for="nu">Nữ</label>
+                <input type="radio" name="gender" required />
+                <label for="nam">Nam</label>
+              </label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="">
+                <p>Địa chỉ liên hệ</p>
+                <input
+                  type="text"
+                  id="linkadress"
+                  required
+                  class="setsize lbtext"
+                />
+              </label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="">
+                <p>Tỉnh thành</p>
+                <select name="provice" id="provice" class="lbtext" required>
+                  <option value=""></option>
+                  <option value="DN">Đà Nẵng</option>
+                  <option value="HCM">HCM</option>
+                  <option value="HN">Hà Nội</option>
+                  <option value="Hue ">Huế</option>
+                  <option value="HP">Hải Phòng</option>
+                </select>
+              </label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="phone">
+                <p>Điện thoại</p>
+                <input
+                  type="tel"
+                  required
+                  id="phone"
+                  name="phone"
+                  class="setsize lbtext"
+                />
+              </label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="phone">
+                <p>Di động</p>
+                <input type="text" required id="phone" class="setsize lbtext" />
+              </label>
+            </td>
+          </tr>
+          <tr></tr>
+        </table>
+        <div class="box22">
+          <h1>Điều khoản sử dụng</h1>
+          <p>Chào mừng bạn đến website chơi game trực tuyến <b>Game vui</b></p>
+          <p style="margin-left: 350px">Sửa đổi lân cuối: Tháng 09 năm 2014</p>
+          <p>
+            Cùng với với việc tuy cập và sử dụng các dịch vụ của
+            <b>Game vui</b>, bạn cần tuân theo các Điều <br />khoả sử dụng được
+            liệu kê dưới đây. Bạn nên đọc kỹ Điều khoản sử dụng Lorem ipsum
+            dolor sit amet consectetur adipisicing elit. Impedit consequuntur
+            laudantium ad harum blanditiis deleniti in maxime, quasi quas. Nam
+            aut impedit illo, quas repellendus eligendi distinctio sed vitae
+            beatae. Cumque accusamus quaerat expedita culpa nobis! Ducimus
+            temporibus est voluptas expedita hic laboriosam distinctio illum
+            exercitationem, eius vero possimus sed dolore totam impedit.
+            Aspernatur labore deserunt rem aperiam illo sed! Aperiam sed unde
+            itaque fugit similique eos dignissimos odit cum atque, placeat nobis
+            nihil sunt eaque ea explicabo fugiat repellat nisi eligendi alias
+            quibusdam obcaecati officia, dolore cumque! Rerum, facilis? In
+            consequuntur numquam molestiae magnam laboriosam ab et praesentium.
+            Illo labore deleniti repellendus quaerat commodi illum officia magni
+            esse veritatis ut explicabo, odit pariatur, mollitia iusto maxime
+            iste, quisquam nesciunt! Asperiores voluptas maiores, eaque, ratione
+            voluptate labore nam praesentium, voluptatibus corrupti aut ea
+            eveniet? Modi alias illo officiis libero corporis a asperiores, quia
+            praesentium. Impedit ab voluptates minima eos autem! Error illo
+            architecto tempore atque rerum quod rem vitae itaque modi eveniet
+            delectus pariatur nobis inventore laudantium, ipsum consequatur
+            maxime animi eius, aliquid ipsa libero. Perspiciatis doloremque
+            temporibus earum autem. Optio amet adipisci veritatis, officiis et
+            voluptate consequatur dolores eveniet! Quaerat quam repellendus ea
+            nisi quod in, fuga voluptatibus maxime ut aperiam culpa laudantium
+            dolorem accusantium illum optio tempore obcaecati. Ipsam ab ducimus
+            molestias temporibus ipsa soluta reprehenderit odio laudantium quia.
+            Porro maxime ex ea, harum similique beatae libero, quisquam quam
+            natus rem voluptatum dolores suscipit dolor nam quaerat magni?
+            Consectetur enim magni exercitationem, quo cumque distinctio,
+            pariatur nulla similique laboriosam nihil mollitia dicta provident
+            obcaecati aspernatur facilis necessitatibus illo minus. Numquam
+            culpa illum voluptatibus alias explicabo, esse voluptate nisi. Enim
+            incidunt nobis quis aut quidem voluptates, pariatur magni iusto
+            inventore quo id animi sequi. Doloribus est nobis aspernatur cum.
+            Nesciunt sed ullam assumenda nobis sunt fugiat, dolores dolor earum!
+          </p>
+        </div>
+        <div class="box3">
+          <input
+            class="button"
+            type="submit"
+            value="Tôi đồng ý đăng ký thành viên "
+          />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

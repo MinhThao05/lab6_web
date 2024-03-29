@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+      .container {
+        max-width: 700px;
+        background-color: rgb(189, 204, 204);
+        margin: auto;
+      }
+      .phan {
+        margin-top: 5px;
+        padding: 10px;
+        border-bottom: 2px solid rgb(141, 139, 139);
+        border-right: 2px solid rgb(141, 139, 139);
+        border-radius: 5px;
+        width: 600px;
+      }
+      ol > span {
+        display: block;
+        font-size: 14px;
+      }
+      ol > li {
+        font-weight: bold;
+      }
+
+      ul {
+        list-style-type: none;
+      }
+      li > p {
+        margin-bottom: 3px;
+        font-weight: bold;
+      }
+      li {
+        font-size: small;
+      }
+
+      tr td {
+        border-bottom: 1px solid black; /* Đường kẻ màu đen có độ dày 1px phía dưới mỗi ô */
+      }
+      tr.no_border td {
+        border-bottom: none; /* Loại bỏ đường kẻ dưới cho td trong tr có class "no-border" */
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <form>
+        <div class="box1">
+          <p class="phan">
+            <b>Phần 1.</b> CHọn câu trả lời mà bạn đã từng hành động hoặc nghĩ
+            mình sẽ hành động
+          </p>
+          <ol>
+            <li>Khi bạn đi đến một nơi nào đó trong ngày, bạn sẽ</li>
+
+            <span>
+              <input type="radio" name="phan1" required />
+              <label for="a"
+                >lên danh sách công việc và thời gian thực hiện các công việc
+                khi bạn đến đó
+              </label>
+            </span>
+            <span>
+              <input type="radio" name="phan1" required />
+              <label for="b">Nghĩ đến công việc sẽ làm và đi thôi</label>
+            </span>
+            <hr />
+            <li>Nếu bạn là một giáo viên, bạn muốn dạy</li>
+            <span>
+              <input type="radio" name="phan2" />
+              <label for="text">các khoá học thực nghiệm(thực tế)</label>
+            </span>
+            <span>
+              <input type="radio" name="phan2" />
+              <label for="text">các khoá học liên quan đến lý thuyết</label>
+            </span>
+            <hr />
+            <li>Thường thì bạncó phải là một người</li>
+            <span>
+              <input type="radio" name="phan3" id="" />
+              <label for="text">chủ động giao lưu/giao tiếp</label>
+            </span>
+            <span>
+              <input type="radio" name="phan3" />
+              <label for="text">trầm tính và dè dặt</label>
+            </span>
+          </ol>
+          <p class="phan">
+            <b>Phần 2.</b>Chọn từ hoặc nhóm từ nào đúng (gần đúng) với cách nghĩ
+            hay hành động của bạn
+          </p>
+          <ul>
+            <table>
+              <tr>
+                <td>
+                  <li>
+                    <p>27.</p>
+                    <div>
+                      <input type="radio" name="p27" />
+                      <label for="op1">Lên kế hoạch</label>
+                    </div>
+                    <div>
+                      <input type="radio" name="p27" />
+                      <label for="op2">Không len kế hoạch</label>
+                    </div>
+                  </li>
+                </td>
+                <td>
+                  <li>
+                    <p>28.</p>
+                    <div>
+                      <input type="radio" name="p28" id="p28" />
+                      <label for="op1">Các sự kiện</label>
+                    </div>
+                    <div>
+                      <input type="radio" name="p28" id="p28" />
+                      <label for="op2"> các ý tưởng</label>
+                    </div>
+                  </li>
+                </td>
+                <td>
+                  <li>
+                    <p>29.</p>
+                    <div>
+                      <input type="radio" name="p29" id="p29" />
+                      <label for="op1">Trầm tĩnh</label>
+                    </div>
+                    <div>
+                      <input type="radio" name="p29" id="p29" />
+                      <label for="op2">Nồng nhiệt</label>
+                    </div>
+                  </li>
+                </td>
+                <td>
+                  <li>
+                    <p>30.</p>
+                    <div>
+                      <input type="radio" name="p30" id="p30" />
+                      <label for="op1">Có sức thuyết phục</label>
+                    </div>
+                    <div>
+                      <input type="radio" name="p30" id="p30" />
+                      <label for="">làm cảm động</label>
+                    </div>
+                  </li>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <li>
+                    <p>31.</p>
+                    <div>
+                      <input type="radio" name="p30" id="p31" />
+                      <label for="op1">Tưởng tượng</label>
+                    </div>
+                    <div>
+                      <input type="radio" name="p30" id="p31" />
+                      <label for="op2">Thực tế</label>
+                    </div>
+                  </li>
+                </td>
+                <td>
+                  <li>
+                    <p>32.</p>
+                    <div>
+                      <input type="radio" name="p32" id="p32" />
+                      <label for="op1">Lợi ích</label>
+                    </div>
+                    <div>
+                      <input type="radio" name="p32" id="p32" />
+                      <label for="op1">Phước lành(Phù hộ)</label>
+                    </div>
+                  </li>
+                </td>
+                <td>
+                  <li>
+                    <p>33.</p>
+                    <div>
+                      <input type="radio" name="p33" id="p33" />
+                      <label for="op1">Cư xử hoà giải</label>
+                    </div>
+                    <div>
+                      <input type="radio" name="p33" id="p33" />
+                      <label for="op1">Người phán xét/chỉ trích</label>
+                    </div>
+                  </li>
+                </td>
+                <td>
+                  <li>
+                    <p>34.</p>
+                    <div>
+                      <input type="radio" name="p34" id="p34" />
+                      <label for="op1">Có hệ thống</label>
+                    </div>
+                    <div>
+                      <input type="radio" name="p34" id="p34" />
+                      <label for="op1">Tự ý/ linh hoạt</label>
+                    </div>
+                  </li>
+                </td>
+              </tr>
+              <tr class="no_border">
+                <td>
+                  <li>
+                    <p>35.</p>
+                    <div>
+                      <input type="radio" name="p35" id="p35" />
+                      <label for="op1">Tuyên bố</label>
+                    </div>
+                    <div>
+                      <input type="radio" name="p35" id="p35" />
+                      <label for="op1">Quan niệm</label>
+                    </div>
+                  </li>
+                </td>
+                <td>
+                  <li>
+                    <p>36.</p>
+                    <div>
+                      <input type="radio" name="p36" id="p36" />
+                      <label for="op1">Kính đáo</label>
+                    </div>
+                    <div>
+                      <input type="radio" name="p36" id="p36" />
+                      <label for="op1">Thích nói</label>
+                    </div>
+                  </li>
+                </td>
+                <td>
+                  <li>
+                    <p>37.</p>
+                    <div>
+                      <input type="radio" name="p37" id="p37" />
+                      <label for="op1">Phân tích</label>
+                    </div>
+                    <div>
+                      <input type="radio" name="p37" id="p37" />
+                      <label for="op1">Đồng cảm</label>
+                    </div>
+                  </li>
+                </td>
+                <td>
+                  <li>
+                    <p>38.</p>
+                    <div>
+                      <input type="radio" name="p38" id="p38" />
+                      <label for="op1">Sáng tạo cái mới</label>
+                    </div>
+                    <div>
+                      <input type="radio" name="p38" id="p38" />
+                      <label for="op1">Làm dựa trên cái có sẵn</label>
+                    </div>
+                  </li>
+                </td>
+              </tr>
+              <tr class="no_border">
+                <td>
+                  <li style="margin-left: 10px; border: none">
+                    <div>
+                      <input type="radio" name="p35" id="p35" />
+                      <label for="op1">Cảm thấy lạnh nhạt về nó</label>
+                    </div>
+                    <div>
+                      <input type="radio" name="p35" id="p35" />
+                      <label for="op1">Bạn cảm thấy chán nản về nó</label>
+                    </div>
+                  </li>
+                </td>
+              </tr>
+            </table>
+          </ul>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
